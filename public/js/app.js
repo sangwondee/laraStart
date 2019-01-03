@@ -14038,19 +14038,12 @@ module.exports = __webpack_require__(51);
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_router__ = __webpack_require__(41);
-
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
-
 __webpack_require__(14);
 
 window.Vue = __webpack_require__(38);
 
  // Import Vue Router for Use Vue Router
-Vue.use(__WEBPACK_IMPORTED_MODULE_0_vue_router__["a" /* default */]); //
+Vue.use(__WEBPACK_IMPORTED_MODULE_0_vue_router__["a" /* default */]);
 
 // Path routes javascript same route in Laravel PHP
 var routes = [{ path: '/dashboard', component: __webpack_require__(42) }, { path: '/profile', component: __webpack_require__(45) }];
@@ -14059,7 +14052,8 @@ var routes = [{ path: '/dashboard', component: __webpack_require__(42) }, { path
 // You can pass in additional options here, but let's
 
 var router = new __WEBPACK_IMPORTED_MODULE_0_vue_router__["a" /* default */]({
-  routes: routes
+    mode: 'history', // use for history for bu
+    routes: routes
 });
 
 /**
@@ -14072,19 +14066,9 @@ var router = new __WEBPACK_IMPORTED_MODULE_0_vue_router__["a" /* default */]({
 
 Vue.component('example-component', __webpack_require__(48)); // Componnet for example
 
-
-// const files = require.context('./', true, /\.vue$/i)
-// files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key)))
-
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
-
 var app = new Vue({
-  el: '#app',
-  router: router
+    el: '#app',
+    router: router
 });
 
 /***/ }),
